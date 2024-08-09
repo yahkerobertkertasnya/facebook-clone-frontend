@@ -25,7 +25,7 @@ jobs:
           docker build \
           -t yahkerobertkertasnya/facebook-clone-fe . \
           --build-arg VITE_ROOT_URL=${{ secrets.VITE_ROOT_URL }} \
-          --build-arg VITE_GRAPHQL_BACKED_URL=${{ secrets.VITE_GRAPHQL_BACKED_URL }} \
+          --build-arg VITE_GRAPHQL_BACKED_URL=${{ secrets.VITE_GRAPHQL_BACKEND_URL }} \
           --build-arg VITE_GRAPHQL_BACKEND_WS_URL=${{ secrets.VITE_GRAPHQL_BACKEND_WS_URL }}
           docker push yahkerobertkertasnya/facebook-clone-fe
 
